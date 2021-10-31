@@ -27,9 +27,8 @@ def eg():
         us1 = '1234567890'
         user1 = ''.join((random.choice(us1) for x in range(7)))
         user2 = '+964' + "770" +user1
-        pas23 = ''.join((random.choice(us1) for x in range(7)))
         pass5 = '0770'
-        pas2 = pass5+pas23
+        pas2 = pass5+user1
         data = {'email':user2, 
          'password':pas2, 
          'access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32', 
@@ -77,5 +76,6 @@ else:
         eg()
     else:
         exit()
+
 
 
