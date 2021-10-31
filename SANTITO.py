@@ -25,10 +25,10 @@ haeders = {'user-agent':str(generate_user_agent()),
 def eg():
     while True:
         us1 = '1234567890'
-        user1 = ''.join((random.choice(us1) for x in range(10)))
-        user2 = '+964' + user1
-        pas23 = ''.join((random.choice(us1) for x in range(10)))
-        pass5 = '0'
+        user1 = ''.join((random.choice(us1) for x in range(7)))
+        user2 = '+964' + "770" +user1
+        pas23 = ''.join((random.choice(us1) for x in range(7)))
+        pass5 = '0770'
         pas2 = pass5+pas23
         data = {'email':user2, 
          'password':pas2, 
@@ -77,4 +77,5 @@ else:
         eg()
     else:
         exit()
+
 
